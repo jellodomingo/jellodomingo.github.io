@@ -6,12 +6,12 @@ function enterWebsiteAnimate() {
     
     tl.add({
         targets: '#home-page',
-        translateX: 400
+        translateX: 100
     });
     
     tl.add({
         targets: '#topbar',
-        translateY: -100
+        translateY: -25
     });
     
     tl.add({
@@ -19,7 +19,7 @@ function enterWebsiteAnimate() {
         translateX: 0,
         translateY: 0,
         opacity: 1,
-        duration: 1200
+        duration: 1000
     });
 }
 
@@ -31,14 +31,14 @@ function enterHomeAnimate() {
     
     tl.add({
         targets: '#home-page',
-        translateX: 400
+        translateX: 100
     });
     
     tl.add({
         targets: '#home-page',
         translateX: 0,
         opacity: 1,
-        duration: 1200
+        duration: 1000
     });
 }
 
@@ -50,14 +50,14 @@ function enterProjectsAnimate(){
     
     tl.add({
         targets: '#projects-page',
-        translateX: 400
+        translateX: 100
     });
     
     tl.add({
         targets: '#projects-page',
         translateX: 0,
         opacity: 1,
-        duration: 1200
+        duration: 1000
     });
 }
 
