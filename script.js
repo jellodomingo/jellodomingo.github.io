@@ -77,3 +77,8 @@ function showProjects() {
 
 //START UP ANIMATION
 enterWebsiteAnimate();
+
+//DIV ANIMATION
+AOS.init({ 
+    mirror: true
+});
