@@ -43,7 +43,9 @@ html {
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-color: #151515 !important;
+overflow-y: scroll; }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
@@ -54,7 +56,9 @@ body {
   font-size: 1rem;
   font-weight: 200;
   line-height: 1.5;
-  color: #333;
+  max-width: 100%;
+  overflow-x: hidden;
+  color: #ccc;
   text-align: left;
   background-color: white; }
 
@@ -131,11 +135,11 @@ sup {
   top: -.5em; }
 
 a {
-  color: #12bbad;
+  color: #8f8f8f;
   text-decoration: none;
   background-color: transparent; }
   a:hover {
-    color: #0b756c;
+    color: #f3f3f3;
     text-decoration: underline; }
 
 a:not([href]):not([tabindex]) {
@@ -343,6 +347,16 @@ h6, .h6 {
 
 .display-4 {
   font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2; }
+  
+.display-4 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2; }
+
+.display-5 {
+  font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.2; }
 
@@ -7123,3 +7137,12 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
