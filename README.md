@@ -4,3 +4,10 @@ This personal website is open-source and free to use as a template. Developed us
 Styled and organized using react-bootstrap and uses react-spring and react-visibility-sensor for animations. 
 
 By Angelo Dominic Domingo
+
+### To host on Github Pages
+
+1. Npm install gh-pages.
+2. Add Homepage field on package.json.
+3. Add `"predeploy": "npm run build"` and `"deploy": "gh-pages -d build"` to package.json's scripts.
+4. Run command `npm run deploy`.
