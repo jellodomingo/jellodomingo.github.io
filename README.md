@@ -11,3 +11,9 @@ By Angelo Dominic Domingo
 2. Add Homepage field on package.json.
 3. Add `"predeploy": "npm run build"` and `"deploy": "gh-pages -d build"` to package.json's scripts.
 4. Run command `npm run deploy`.
+
+### TODO:
+- Remove excess css
+- Add more animations
+- Add pictures
+- Add work history
