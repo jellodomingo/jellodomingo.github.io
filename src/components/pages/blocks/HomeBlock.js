@@ -1,6 +1,10 @@
 import { Col, Row } from "react-bootstrap";
 import { GithubLogo, LinkedInLogo } from "../../../assets/icons/icons";
-import { FadeInFromTop, FadeInFromLeft, FadeInFromRight } from "../../Animations";
+import {
+    FadeInFromTop,
+    FadeInFromLeft,
+    FadeInFromRight,
+} from "../../Animations";
 
 const HomeBlock = () => {
     return (
@@ -17,24 +21,30 @@ const HomeBlock = () => {
             </FadeInFromLeft>
             <FadeInFromRight>
                 <Row>
-                    <Col sm={{span: 2}} md={{span: 2, offset: 8}} >
+                    <Col sm={{ span: 2 }} md={{ span: 2, offset: 8 }}>
                         <GithubLogo
                             width="50"
                             height="50"
-                            onClick={()=> {window.location.href="https://github.com/jellodomingo"}}
+                            onClick={() => {
+                                window.location.href =
+                                    "https://github.com/jellodomingo";
+                            }}
                         />
                     </Col>
-                    <Col sm={{span: 2}} md={{span: 2}}>
+                    <Col sm={{ span: 2 }} md={{ span: 2 }}>
                         <LinkedInLogo
                             style={{ borderRadius: "15px" }}
                             width="50"
                             height="50"
-                            onClick={()=> {window.location.href="https://www.linkedin.com/in/angelo-domingo/"}}
+                            onClick={() => {
+                                window.location.href =
+                                    "https://www.linkedin.com/in/angelo-domingo/";
+                            }}
                         />
                     </Col>
                 </Row>
             </FadeInFromRight>
-        </div>      
+        </div>
     );
 };
 

@@ -5,9 +5,9 @@ import {
     TypescriptLogo,
     PythonLogo,
     CSharpLogo,
-    Html5Logo
+    Html5Logo,
 } from "../../../assets/icons/icons";
-import { FadeInFromRight, FadeInFromLeft} from "../../Animations";
+import { FadeInFromRight, FadeInFromLeft } from "../../Animations";
 
 const SkillsBlock = () => {
     return (
@@ -18,13 +18,10 @@ const SkillsBlock = () => {
                 </Row>
             </FadeInFromLeft>
             <FadeInFromRight>
-                <Row className="justify-content-center" style={{ padding: "25px", paddingBottom: "300px" }}>
-                    <Col sm="auto" md="auto">
-                        <JavaLogo width="100" height="100" />
-                    </Col>
-                    <Col sm="auto" md="auto">
-                        <CSharpLogo width="100" height="100" />
-                    </Col>
+                <Row
+                    className="justify-content-center"
+                    style={{ padding: "25px", paddingBottom: "100px" }}
+                >
                     <Col sm="auto" md="auto">
                         <JavascriptLogo width="100" height="100" />
                     </Col>
@@ -32,12 +29,18 @@ const SkillsBlock = () => {
                         <TypescriptLogo width="100" height="100" />
                     </Col>
                     <Col sm="auto" md="auto">
+                        <JavaLogo width="100" height="100" />
+                    </Col>
+                    <Col sm="auto" md="auto">
+                        <CSharpLogo width="100" height="100" />
+                    </Col>
+                    <Col sm="auto" md="auto">
                         <PythonLogo width="100" height="100" />
                     </Col>
                     <Col sm="auto" md="auto">
                         <Html5Logo width="100" height="100" />
                     </Col>
-                </Row> 
+                </Row>
             </FadeInFromRight>
             <FadeInFromLeft>
                 <Row>
@@ -85,7 +88,7 @@ const SkillsBlock = () => {
                 </Row>
             </FadeInFromLeft>
             <FadeInFromRight>
-                <Row style={{ padding: "10px", paddingBottom: "400px" }}>
+                <Row style={{ padding: "10px", paddingBottom: "200px" }}>
                     <Col>
                         <h3 class="text-info">Database</h3>
                         <ul class="display-5 text-info">
