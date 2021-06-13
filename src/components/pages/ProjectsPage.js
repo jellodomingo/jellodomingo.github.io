@@ -2,10 +2,34 @@ import { Container, Row, Col } from "react-bootstrap";
 import { GithubLogo } from "../../assets/icons/icons";
 import { FadeInFromLeft } from "../Animations";
 
+// TODO: Programmatically create the projects blocks from a json.
+
 const ProjectPage = () => {
     return (
         <Container>
             <FadeInFromLeft>
+                <Container style={{ padding: "50px" }}>
+                    <Row>
+                        <Col>
+                            <h3>Random Anime Picker</h3>
+                            <p>
+                                A small React app written in Typescript using the Jikan API to get a random anime 
+                                sorted by season and year. Mainly a practice for frontend development
+                                and UI/UX Design. 
+                                <br/>
+                                <a href ="https://jellodomingo.github.io/random_anime_website/">View Here</a>
+                            </p>
+                            <GithubLogo
+                                width="40"
+                                height="40"
+                                onClick={() => {
+                                    window.location.href =
+                                        "https://github.com/jellodomingo/random_anime_website";
+                                }}
+                            />
+                        </Col>
+                    </Row>
+                </Container>
                 <Container style={{ padding: "50px" }}>
                     <Row>
                         <Col>

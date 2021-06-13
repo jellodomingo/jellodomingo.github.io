@@ -2,18 +2,17 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 import Profile from "../../../assets/sample.jpg";
 import {
     FadeInFromLeft,
-    FadeInFromTop,
     FadeInFromRight,
 } from "../../Animations";
 
 const BioBlock = () => {
     return (
         <Container style={{ paddingTop: "10px", paddingBottom: "10px" }}>
-            <FadeInFromTop>
+            <FadeInFromRight>
                 <Row>
                     <h1 class="display-3 my-3 text-info">About Me</h1>
                 </Row>
-            </FadeInFromTop>
+            </FadeInFromRight>
             <Row>
                 <Col md={4}>
                     <FadeInFromLeft>
@@ -33,9 +32,7 @@ const BioBlock = () => {
                                 >
                                     I am a Los Angeles-based Software Engineer
                                     who specializes in full-stack web
-                                    development. I currently work as a Full
-                                    Stack Engineer at anna, where I build
-                                    backend services and frontend experiences.
+                                    development.
                                     <br />
                                     <br />
                                     When I am not coding, I try to learn other
